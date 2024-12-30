@@ -1,0 +1,60 @@
+body {
+  background-color: #f9fafb;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h3 {
+  color: #2c3e50;
+}
+
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.img-fluid {
+  transition: transform 0.2s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+}
+
+/* Introductory Section */
+.intro-section {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient fill */
+  border-radius: 0 0 30px 30px; /* Rounded edges at the bottom */
+  padding: 50px 0; /* Top and bottom padding */
+  color: white; /* Text color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.new-section {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: none;
+}
+
+.new-section.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
